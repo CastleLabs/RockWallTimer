@@ -97,7 +97,7 @@ def display(msg, y, col):
     pygame.display.update()
 # Function to handle stopwatch logic, including displaying the running time
 def handle_stopwatch(start_switch, stop_switch, run, s, m, timer, last_displayed_time, y, last_start_time, last_stop_time):
-    max_time = 59  # Unused variable, consider removing
+    max_time = 59  
 
     # Handling the running state of the stopwatch
     if run == 1:
@@ -167,7 +167,7 @@ high_scores = read_high_scores()
 # Displaying the title
 fontObj = pygame.font.Font('freesansbold.ttf', int(height/10))
 msgSurfaceObj = fontObj.render("Climbing Wall Timers", False, whiteColor)
-msgRectobj = msgSurfaceObj.get_rect()  # Unused variable, consider removing
+msgRectobj = msgSurfaceObj.get_rect()
 msgRectobj.topleft = (2, 0)
 windowSurfaceObj.blit(msgSurfaceObj, msgRectobj)
 
